@@ -1,0 +1,148 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Contato Punta Serena</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS
+	================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic&7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='css/flexslider.css'>
+<link rel='stylesheet' href='css/font-awesome.css'>
+<link rel='stylesheet' href='css/weather-icons.css'>
+<link rel='stylesheet' href='css/bootstrap.css'>
+<link rel='stylesheet' href='css/prettyPhoto.css'>
+<link rel='stylesheet' href='css/mmenu.css'>
+<link rel='stylesheet' href='css/jquery-ui-1.10.4.datepicker.min.css'>
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='css/mediaqueries.css'>
+<link rel='stylesheet' href='colors/default.css'>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="#">
+	<link rel="apple-touch-icon" href="#">
+	<link rel="apple-touch-icon" sizes="72x72" href="#">
+	<link rel="apple-touch-icon" sizes="114x114" href="#">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<style>
+		/*
+		 When implementing this in a CMS, these styles should remain in the head
+		 and use if logic to switch between the .fwslider or alternative
+		 version of the theme (for correct header display). .fwslider or .alt in the body
+		 tag will convert the header display to white background with grey letters,
+		 as in index_alt.html -- feel free to delete this comment when you have no
+		 use for it
+		*/
+		#header {
+			background: url("images/header/banner.jpg") no-repeat center top;
+		}
+
+		.fwslider #header { background: none; }
+	</style>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+</head>
+<body class=" ">
+
+<div id="mobile-bar">
+	<a class="menu-trigger" href="#mobilemenu"><i class="fa fa-bars"></i></a>
+	<h1 class="mob-title">Contato</h1>
+</div>
+
+<div id="page">
+	<header id="header">
+		
+	</header>
+
+<main id="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h2 class="page-title">CONTATO</h2>
+				<div class="row">
+					<div class="col-sm-8">
+						<article class="entry">
+							<div class="entry-content">
+								
+								<div class="contact-form">
+									<div id="done" style="display:none;"><div class="wrap"><h3>Obrigado, entraremos em contato o mais breve possível</h3></div></div>
+
+									<form id="cform" class="contact" action="contact.php">
+										<p>
+											<label for="name">Seu nome:</label>
+											<input type="text" id="name" name="name"/>
+										</p>
+
+										<p>
+											<label for="email">Seu e-mail:</label>
+											<input type="email" id="email" name="email"/>
+										</p>
+
+										<p>
+											<label for="subject">Assunto:</label>
+											<input type="text" id="subject" name="subject"/>
+										</p>
+
+										<p>
+											<label for="message">Mensagem</label>
+											<textarea name="message" id="message" cols="30" rows="10"></textarea>
+										</p>
+
+										<p><input id="contact-submit" type="submit" value="Enviar" class="button"/></p>
+									</form>
+								</div>
+
+							</div>
+						</article>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="sidebar">
+								<aside class="widget widget_ci_social_widget ci-socials group">
+									<a href="http://www.facebook.com/PousadaPuntaSerena" class="social-icon" title="Like us on Facebook."><i class="fa fa-facebook"></i></a>
+								</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+	<footer id="footer">
+
+	</footer>
+</div> <!-- #page -->
+
+<!-- Javascript
+================================================== -->
+<script src='js/jquery-1.10.1.min.js'></script>
+<script src='js/jquery-ui-1.10.4.custom.min.js'></script>
+<script src='js/superfish.min.js'></script>
+<script src='js/jquery.flexslider-min.js'></script>
+<script src='js/jquery.mmenu.min.js'></script>
+<script src='js/jquery.dropkick-min.js'></script>
+<script src='js/jquery.fitvids.js'></script>
+<script src='js/jquery.prettyPhoto.js'></script>
+<script src='js/contact.js'></script>
+<script src='js/scripts.js'></script>
+<script text="text/javascript">
+	$(function(){
+		$('header').load('header.html');
+		$('footer').load('rodape.html');
+	})
+</script>
+</body>
+</html>
