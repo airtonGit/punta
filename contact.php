@@ -11,12 +11,12 @@ $message = ($_GET['message']) ?$_GET['message'] : $_POST['message'];
 //flag to indicate which method it uses. If POST set it to 1
 if ($_POST) $post=1;
 //recipient - change this to your name and email
-$to = $name . ' <' . 'your@email.com' . '>';
+$to = $name . ' <' . 'pousada@puntaserena.com.br' . '>';
 //sender
 $from = $name . ' <' . $email . '>';
 
 //subject and the html message
-$s = 'Comment from ' . $name;
+$s = 'Enviado do site ' . $name;
 $msg = '
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -37,8 +37,8 @@ $result = sendmail($to, $s, $msg, $from);
 
 //if POST was used, display the message straight away
 if ($_POST) {
-	if ($result) echo 'Thank you! We have received your message.';
-	else echo 'Sorry, unexpected error. Please try again later';
+	if ($result) echo 'Obrigado, recebemos sua mensagem';
+	else echo 'Oops alguma falha ocorreu tente uma forma mais tradicional neste momento, fone +55 (51) 3626 2224';
 
 	//else if GET was used, return the boolean value so that
 	//ajax script can react accordingly

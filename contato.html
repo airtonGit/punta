@@ -45,9 +45,7 @@
 		 as in index_alt.html -- feel free to delete this comment when you have no
 		 use for it
 		*/
-		#header {
-			background: url("images/header/banner.jpg") no-repeat center top;
-		}
+		
 
 		.fwslider #header { background: none; }
 	</style>
@@ -63,14 +61,39 @@
 
 <div id="page">
 	<header id="header">
-		
 	</header>
+
+	<div id="slider" class="flexslider loading">
+		<ul class="slides">
+			<li style="background: url('images/homeslide/piscina-cima-foco.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">E-mail</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('enviar');" href="#">Envie mensagem.</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/piscina-cascata-azul.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Telefone</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('enviar');" href="#">Envie mensagem.</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/visual-praia-slide.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Tire sua dúvida</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('enviar');" href="#">Envie mensagem.</a>
+				</div>
+			</li>
+		</ul>
+	</div> <!-- #slider -->
 
 <main id="main">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
-				<h2 class="page-title">CONTATO</h2>
+				<h2 class="page-title"><a id="enviar"></a>CONTATO</h2>
 				<div class="row">
 					<div class="col-sm-8">
 						<article class="entry">
@@ -142,7 +165,12 @@
 	$(function(){
 		$('header').load('header.html');
 		$('footer').load('rodape.html');
-	})
+	});
+	function scrollTo(hash){
+		$('html, body').animate({
+			scrollTop : $('#' + hash).offset().top
+		}, 1000);
+	}
 </script>
 </body>
 </html>
