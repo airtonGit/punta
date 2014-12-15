@@ -7,8 +7,8 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<title>Contato Punta Serena</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Pousada Punta Serena Torres-RS">
+	<meta name="author" content="hotelpago.com.br gestão completa para hotéis e pousadas">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS
@@ -45,20 +45,17 @@
 		 as in index_alt.html -- feel free to delete this comment when you have no
 		 use for it
 		*/
-		#header {
-			background: url("images/header/banner.jpg") no-repeat center top;
-		}
 
 		.fwslider #header { background: none; }
 	</style>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 </head>
-<body class=" ">
+<body class=" fwslider">
 
 <div id="mobile-bar">
 	<a class="menu-trigger" href="#mobilemenu"><i class="fa fa-bars"></i></a>
-	<h1 class="mob-title">Contact</h1>
+	<h1 class="mob-title">Localização</h1>
 </div>
 
 <div id="page">
@@ -66,11 +63,51 @@
 
 	</header>
 
+	<div id="slider" class="flexslider loading">
+		<ul class="slides">
+			<li style="background: url('images/homeslide/piscina-cima-foco.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Localização</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('mapa');" href="#">Mapa</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/piscina-cascata-azul.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">A Beira mar em Torres</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('mapa');" href="#">Mapa</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/visual-praia-slide.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Região gastronômica</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('mapa');" href="#">Mapa.</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/piscina-praia-slide.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Visão em deck elevado do mar</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('mapa');" href="#">Mapa.</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/pousada-frente-novo.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Av Beira Mar, Praia dos Molhes, Torres - RS</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('mapa');" href="#">Mapa.</a>
+				</div>
+			</li>
+		</ul>
+	</div> <!-- #slider -->
+
 <main id="main">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
-				<h3>Localização e Contato</h3>
+				<h3><a id="mapa"></a>Localização e Contato</h3>
 				Av Beira-mar nº 1360<br/>
 				Praia dos Molhes<br/>
 				Torres - RS <br/>
@@ -104,6 +141,12 @@
 	$(function(){
 		$('header').load('header.html');
 		$('footer').load('rodape.html');
+		function scrollTo(hash){
+			alert('hash é:', hash );
+			$('html, body').animate({
+				scrollTop : $('#' + hash).offset().top
+			}, 1000);
+		}
 	})
 </script>
 </body>
