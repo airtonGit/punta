@@ -45,10 +45,7 @@
 		 as in index_alt.html -- feel free to delete this comment when you have no
 		 use for it
 		*/
-		#header {
-			background: url("images/header/banner.jpg") no-repeat center top;
-		}
-
+		
 		.fwslider #header { background: none; }
 	</style>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -65,18 +62,58 @@
 	<header id="header">
 	</header>
 
+	<div id="slider" class="flexslider loading">
+		<ul class="slides">
+			<li style="background: url('images/homeslide/piscina-cima-foco.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Pedale muito com nossas bicicletas</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('servicos');" href="#">Lista completa.</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/piscina-cascata-azul.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Café da manhã completo</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('servicos');" href="#">Lista completa.</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/visual-praia-slide.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Cadeiras e guarda-sol para praia</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('servicos');" href="#">Lista completa.</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/piscina-praia-slide.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Toalhas para piscinas</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('servicos');" href="#">Lista completa.</a>
+				</div>
+			</li>
+			<li style="background: url('images/homeslide/pousada-frente-novo.jpg') no-repeat center center">
+				<div class="slide-info">
+					<h2 class="slide-title">Churrasqueira disponível</h2>
+
+					<a class="btn slide-more" onclick="scrollTo('servicos');" href="#">Lista completa.</a>
+				</div>
+			</li>
+		</ul>
+	</div> <!-- #slider -->
+
 	<main id="main">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-1 full">
-					<h2 class="page-title">Serviços oferecidos</h2>
+					<h2 class="page-title"><a id='servicos'></a>Serviços oferecidos</h2>
 
 					<div class="row">
 						<div class="col-sm-4">
 							<div class="item">
 								<figure class="item-thumb">
-									<a href="http://www.cssigniter.com/sample_content/sample_image.png" data-rel="prettyPhoto[pp_gal]">
-										<img src='http://placehold.it/750x930' width='750' height='930' alt='Placeholder Image' />
+									<a href="images/servicos/cafe-manha.jpg" data-rel="prettyPhoto[pp_gal]">
+										<img src='images/servicos/cafe-manha-menor.jpg' width='750' height='930' alt='Café da manhã' />
 										<div class="overlay"><i class="fa fa-search-plus"></i></div>
 									</a>
 								</figure>
@@ -84,40 +121,45 @@
 						</div>
 						<div class="col-sm-8">
 							<div class="">
-								<h3>Café da manhã</h3>
+								<ul>
+										<li>Estacionamento</li>
+										<li>Piscina spa hidromassagem</li>
+										<li>Piscina com amplo deck</li>
+										<li>Mesas com guarda-sol</li>
+										<li>Disponibilizamos toalhas</li>
+										<li>Completo café da manhã, com diversas opções de sucos, bolos, frutas e pães</li>
+										<li>WiFi grátis nos quartos e áreas comuns</li>
+										<li>Sala de estar com TV à cabo</li>
+										<li>Sala de leitura com mini-biblioteca, mesa e jogos de cartas</li>
+										<li>Recepção próxima a área da piscina com bebidas</li>
+										<li>Amplo deck</li>
+										<li>TV's LED 32</li>
+										<li>Ar-condicionado split</li>
+										<li>Frigobar</li>
+										<li>Recepção 24h com cameras de vigilância</li>
+										<li>Tudo isso a beira-mar em deck elevado</li>
+									</ul>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-4">
+							<div class="item">
+								<figure class="item-thumb">
+									<a href="images/servicos/salatv.jpg" data-rel="prettyPhoto[pp_gal]">
+										<img src='images/servicos/salatv-menor.jpg' width='750' height='930' alt='Placeholder Image' />
+										<div class="overlay"><i class="fa fa-search-plus"></i></div>
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-sm-8">
 							<div class="">
-								<figure class="item-thumb">
-									<a href="http://www.cssigniter.com/sample_content/sample_image.png" data-rel="prettyPhoto[pp_gal]">
-										<img src='http://placehold.it/750x930' width='750' height='930' alt='Placeholder Image' />
-										<div class="overlay"><i class="fa fa-search-plus"></i></div>
-									</a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="item">
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="item">
-								<figure class="item-thumb">
-									<a href="http://www.cssigniter.com/sample_content/sample_image.png" data-rel="prettyPhoto[pp_gal]">
-										<img src='http://placehold.it/750x930' width='750' height='930' alt='Placeholder Image' />
-										<div class="overlay"><i class="fa fa-search-plus"></i></div>
-									</a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="item">
-								
+								<ul>
+									<li>Churrasqueira disponível ao hóspede, consulte agenda</li>
+									<li>Toalhas para a piscina disponíveis sem custo</li>
+									<li>Serviço de praia, cadeiras e guarda-sol, sem custo</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -146,7 +188,12 @@
 	$(function(){
 		$('header').load('header.html');
 		$('footer').load('rodape.html');	
-	})
+	});
+	function scrollTo(hash){
+		$('html, body').animate({
+			scrollTop : $('#' + hash).offset().top
+		}, 1000);
+	}
 </script>
 </body>
 </html>
